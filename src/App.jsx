@@ -1,11 +1,14 @@
 /** @format */
 
 import React, { useState } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [nav, setNav] = useState(false);
-
-  return <div></div>;
+    return (
+        <div>
+            <Navbar />
+        </div>
+    );
 }
 
 export default App;
