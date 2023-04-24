@@ -4,14 +4,14 @@
  */
 
 export default {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-    theme: {
-        extend: {
-            fontFamily: {
-                header: ["Tenor Sans", "sans-serif"],
-                text: ["Cardo", "serif"],
-            },
-        },
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Tenor Sans", "sans-serif"],
+        custom: ["Cardo", "serif"],
+      },
     },
-    plugins: [],
+  },
+  plugins: [],
 };

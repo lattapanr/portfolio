@@ -1,105 +1,156 @@
 /** @format */
 import React, { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { AiFillHome, AiFillProject } from "react-icons/ai";
-import { BsFillMoonFill, BsPersonFill } from "react-icons/bs";
+import { AiFillHome, AiFillProject, AiFillMail } from "react-icons/ai";
+import {
+  BsFillMoonFill,
+  BsPersonFill,
+  BsFillFileEarmarkPersonFill,
+} from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTimes, FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
 
-    const handleNav = () => {
-        setNav(!nav);
-    };
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
-    const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(true);
 
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
-    return (
-        <div>
-            {/* Dark mode icon */}
-            <BsFillMoonFill
-                size={20}
-                onClick={toggleDarkMode}
-                className="absolute size={'4em'} top-4 left-4 z-[99]"
-            />
+  return (
+    <div>
+      <div className="fixed w-full h-[80px] flex justify-between items-center px-4 text-[#1C1918]">
+        {/* Dark mode icon */}
+        <BsFillMoonFill
+          size={20}
+          color={"#1C1918"}
+          onClick={toggleDarkMode}
+          className=""
+        />
 
-            {/* Hamburger */}
-            <RxHamburgerMenu
-                size={25}
-                onClick={handleNav}
-                className="absolute top-4 right-4 z-[99] md:hidden"
-            />
+        {/* Desktop menu */}
+        <ul className=" hidden w-[280px] justify-between text-lg italic md:flex">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
 
-            {/* Mobile menu */}
-            {nav ? (
-                <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
-                    <a
-                        onClick={handleNav}
-                        href="#home"
-                        className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <AiFillHome size={20} />
-                        <span className="pl-4 font-header uppercase">Home</span>
-                    </a>
+      {/* Hamburger */}
+      <div
+        onClick={handleNav}
+        className="absolute top-8 right-4 z-[99] md:hidden"
+      >
+        {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
+      </div>
 
-                    <a
-                        onClick={handleNav}
-                        href="#about"
-                        className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <BsPersonFill size={20} />
-                        <span className="pl-4 font-header uppercase">
-                            About
-                        </span>
-                    </a>
+      {/* Mobile menu */}
+      {nav ? (
+        <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
+          <a
+            onClick={handleNav}
+            href="#home"
+            className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <AiFillHome size={20} />
+            <span className="pl-4 font-header uppercase">Home</span>
+          </a>
 
-                    <a
-                        onClick={handleNav}
-                        href="#work"
-                        className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <AiFillProject size={20} />
-                        <span className="pl-4 font-header uppercase">
-                            Projects
-                        </span>
-                    </a>
+          <a
+            onClick={handleNav}
+            href="#about"
+            className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <BsPersonFill size={20} />
+            <span className="pl-4 font-header uppercase">About</span>
+          </a>
 
-                    <a
-                        onClick={handleNav}
-                        href="#contact"
-                        className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <IoMdMail size={20} />
-                        <span className="pl-4 font-header uppercase text-blue-500">
-                            Contact
-                        </span>
-                    </a>
-                </div>
-            ) : (
-                ""
-            )}
+          <a
+            onClick={handleNav}
+            href="#work"
+            className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <AiFillProject size={20} />
+            <span className="pl-4 font-header uppercase">Work</span>
+          </a>
 
-            {/* Social icons */}
-            <div className="flex fixed flex-col top-[35%] left-0">
-                <ul>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1C1918]">
-                        <a
-                            className="flex justify-between items-center w-full px-5"
-                            href="/"
-                        >
-                            <span className="text-white">Github</span>
-                            <FaGithub size={30} color="white" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          <a
+            onClick={handleNav}
+            href="#contact"
+            className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <IoMdMail size={20} />
+            <span className="pl-4 font-header uppercase">Contact</span>
+          </a>
         </div>
-    );
+      ) : (
+        ""
+      )}
+
+      {/* Social icons */}
+      <div className="hidden md:flex fixed flex-col top-[35%] left-0">
+        <ul>
+          {/* Github icon */}
+          <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-[#1C1918]">
+            <a
+              className="flex justify-between items-center w-full px-[13px]"
+              href="/"
+            >
+              <span className="text-white text-sm">Github</span>
+              <FaGithub size={25} color="white" />
+            </a>
+          </li>
+
+          {/* Linkedin icon */}
+          <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-[#1C1918]">
+            <a
+              className="flex justify-between items-center w-full px-[13px]"
+              href="/"
+            >
+              <span className="text-white text-sm">Linkedin</span>
+              <FaLinkedin size={25} color="white" />
+            </a>
+          </li>
+
+          {/* Email icon */}
+          <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-[#1C1918]">
+            <a
+              className="flex justify-between items-center w-full px-[13px]"
+              href="/"
+            >
+              <span className="text-white text-sm">Email</span>
+              <AiFillMail size={25} color="white" />
+            </a>
+          </li>
+
+          {/* Resume */}
+          <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-[#1C1918]">
+            <a
+              className="flex justify-between items-center w-full px-[13px]"
+              href="/"
+            >
+              <span className="text-white text-sm">Resume</span>
+              <BsFillFileEarmarkPersonFill size={25} color="white" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
