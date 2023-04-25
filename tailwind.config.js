@@ -4,14 +4,20 @@
  */
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Tenor Sans", "sans-serif"],
-        custom: ["Cardo", "serif"],
-      },
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ["Tenor Sans", "sans-serif"],
+                custom: ["Cardo", "serif"],
+            },
+            keyframes: {
+                "fade-right": {
+                    "0%": { opacity: 0, transform: "translateX(-20px)" },
+                    "100%": { opacity: 1, transform: "translateX(0)" },
+                },
+            },
+        },
     },
-  },
-  plugins: [],
+    plugins: [],
 };
