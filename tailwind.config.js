@@ -6,6 +6,10 @@
 export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        colors: {
+            primary: "#1C1918",
+            white: "#ffffff",
+        },
         extend: {
             fontFamily: {
                 sans: ["Tenor Sans", "sans-serif"],
