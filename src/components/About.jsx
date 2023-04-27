@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import AboutPhoto from "../assets/me2.jpg";
+import Img1 from "../assets/image1.jpg";
 import { DiHtml5, DiCss3, DiJavascript, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
@@ -10,13 +10,13 @@ const About = () => {
     return (
         <div className=" w-full h-screen flex justify-center flex-col items-center  md:flex-row md:max-w-[600px] mx-auto gap-[70px] lg:max-w-[850px] xl:max-w-[1000px] ">
             <div className="hidden w-[40%] lg:w-[35%] xl:w-[30%] h-[300px] md:flex flex-col gap-[50px] md:justify-center lg:justify-between ">
-                <h3 className="hidden uppercase text-[35px] lg:text-[40px] leading-7 md:flex justify-center">
+                <h3 className="hidden uppercase font-bold text-[35px] lg:text-[40px] leading-7 md:flex justify-center">
                     About Me
                 </h3>
-                <img src={AboutPhoto} alt="my photo" />
+                <img src={Img1} alt="my photo" />
             </div>
             <div className="w-[70%] md:w-[60%] lg:w-[65%] md:flex justify-center flex-col items-center gap-6 md:h-[300px] md:justify-between">
-                <h3 className="uppercase text-4xl text-center sm:my-10 md:hidden">
+                <h3 className="uppercase font-bold text-4xl text-center sm:my-10 md:hidden">
                     About Me
                 </h3>
                 <p className="w-[100%] text-justify  lg:text-xl">
@@ -28,7 +28,9 @@ const About = () => {
                     Quibusdam modi earum, dolore doloribus voluptates provident
                     praesentium!
                 </p>
-                <h4 className="uppercase mt-8 text-xl text-center">Skills</h4>
+                <h4 className="uppercase pb-8 md:pb-0 font-bold mt-8 text-xl text-center">
+                    Skills
+                </h4>
 
                 <div className="flex items-center justify-between w-[100%] sm:my-10 md:my-0">
                     <div className="group flex relative">

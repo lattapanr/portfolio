@@ -11,7 +11,19 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: Tenor Sans;
-  }
+    html {
+        font-family: Tenor Sans;
+    }
+}
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.content-div:hover {
+    background: #1c1918 !important;
+    /* passing styles through style element on React, apperently makes React neglect the styles, so needed to declare "!important */
 }
