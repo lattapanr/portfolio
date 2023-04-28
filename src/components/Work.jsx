@@ -10,7 +10,7 @@ const Work = () => {
         <div name="work" className="w-full md:h-screen text-primary">
             <div className="max-w-[1000px] mx-auto w-[85%] sm:w-full p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-10">
-                    <h3 className="uppercase text-4xl font-bold">
+                    <h3 className="uppercase text-4xl text-primary dark:text-white font-bold">
                         Featured Projects
                     </h3>
                 </div>
@@ -28,7 +28,7 @@ const Work = () => {
                                 React JS Application
                             </span>
                             <div className="flex justify-center">
-                                <a href="">
+                                <a href="" target="blank">
                                     <button
                                         className="text-center
                                     px-4
@@ -43,7 +43,7 @@ const Work = () => {
                                     </button>
                                 </a>
 
-                                <a href="">
+                                <a href="" target="blank">
                                     <button
                                         className="text-center
                                         px-4
@@ -72,7 +72,7 @@ const Work = () => {
                                 React JS Application
                             </span>
                             <div className="flex justify-center">
-                                <a href="">
+                                <a href="" target="blank">
                                     <button
                                         className="text-center
                                     px-4
@@ -87,7 +87,7 @@ const Work = () => {
                                     </button>
                                 </a>
 
-                                <a href="">
+                                <a href="" target="blank">
                                     <button
                                         className="text-center
                                         px-4
@@ -116,7 +116,7 @@ const Work = () => {
                                 React JS Application
                             </span>
                             <div className="flex justify-center">
-                                <a href="">
+                                <a href="" target="blank">
                                     <button
                                         className="text-center
                                     px-4
@@ -131,7 +131,7 @@ const Work = () => {
                                     </button>
                                 </a>
 
-                                <a href="">
+                                <a href="" target="blank">
                                     <button
                                         className="text-center
                                         px-4
@@ -157,10 +157,13 @@ const Work = () => {
                         {/* Hover effects */}
                         <div className="opacity-0 group-hover:opacity-90">
                             <span className="text-2xl font-bold text-white tracking-wide">
-                                React JS Application
+                                Grid Drawing Game
                             </span>
                             <div className="flex justify-center">
-                                <a href="">
+                                <a
+                                    href="https://etch-a-sketch-wheat.vercel.app/"
+                                    target="blank"
+                                >
                                     <button
                                         className="text-center
                                     px-4
@@ -175,7 +178,10 @@ const Work = () => {
                                     </button>
                                 </a>
 
-                                <a href="">
+                                <a
+                                    href="https://github.com/lattapanr/etch-a-sketch"
+                                    target="blank"
+                                >
                                     <button
                                         className="text-center
                                         px-4

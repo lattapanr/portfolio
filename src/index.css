@@ -16,6 +16,11 @@
     }
 }
 
+@font-face {
+    font-family: "atteron";
+    src: url("../src/assets/Atteron.ttf");
+}
+
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,5 +30,9 @@
 
 .content-div:hover {
     background: #1c1918 !important;
-    /* passing styles through style element on React, apperently makes React neglect the styles, so needed to declare "!important */
+    /* passing styles through style element on React, apparently makes React neglect the styles, so needed to declare "!important */
+}
+
+.dark {
+    @apply bg-darkBg text-darkText;
 }

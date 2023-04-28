@@ -9,11 +9,15 @@ export default {
         colors: {
             primary: "#1C1918",
             white: "#ffffff",
+            transparent: "transparent",
+            darkBg: "#3e3d3c",
+            darkText: "#dedfde",
         },
         extend: {
             fontFamily: {
                 sans: ["Tenor Sans", "sans-serif"],
-                custom: ["Cardo", "serif"],
+                cardo: ["Cardo", "serif"],
+                atteron: ["Atteron", "serif"],
             },
             keyframes: {
                 "fade-right": {
@@ -24,4 +28,5 @@ export default {
         },
     },
     plugins: [],
+    darkMode: "class",
 };

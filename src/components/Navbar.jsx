@@ -3,35 +3,42 @@ import React, { useState } from "react";
 import { AiFillHome, AiFillProject, AiFillMail } from "react-icons/ai";
 import {
     BsFillMoonFill,
+    BsFillSunFill,
     BsPersonFill,
     BsFillFileEarmarkPersonFill,
 } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaTimes, FaBars } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, toggleDarkMode }) => {
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
         setNav(!nav);
     };
 
-    const [darkMode, setDarkMode] = useState(true);
-
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
-
     return (
-        <div>
-            <div className="fixed w-full h-[80px] flex justify-between items-center px-4 text-[#1C1918] bg-white/90">
+        <nav>
+            <div
+                className={`fixed w-full h-[80px] bg-white/90 dark:bg-primary/90 px-4 flex justify-between items-center text-primary 2xl:px-[200px] ${
+                    darkMode ? "dark" : ""
+                }`}
+            >
                 {/* Dark mode icon */}
-                <div color={"#1C1918"} onClick={toggleDarkMode} className="">
-                    <BsFillMoonFill size={21} />
+                <div
+                    color={"#1C1918"}
+                    onClick={toggleDarkMode}
+                    className="cursor-pointer"
+                >
+                    {!darkMode ? (
+                        <BsFillMoonFill size={22} />
+                    ) : (
+                        <BsFillSunFill size={22} />
+                    )}
                 </div>
 
                 {/* Desktop menu */}
-                <ul className=" hidden w-[280px] justify-between text-xl  xl:w-[360px] xl:text-2xl italic md:flex">
+                <ul className=" hidden w-[280px] justify-between text-xl  xl:w-[360px] xl:text-2xl md:flex">
                     <li>
                         <a href="#home">Home</a>
                     </li>
@@ -109,7 +116,8 @@ const Navbar = () => {
                     <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
                         <a
                             className="flex justify-between items-center w-full px-[13px]"
-                            href="/"
+                            href="https://github.com/lattapanr"
+                            target="blank"
                         >
                             <span className="text-white text-sm">Github</span>
                             <FaGithub size={25} color="white" />
@@ -121,6 +129,7 @@ const Navbar = () => {
                         <a
                             className="flex justify-between items-center w-full px-[13px]"
                             href="/"
+                            target="blank"
                         >
                             <span className="text-sm text-white">Linkedin</span>
                             <FaLinkedin size={25} color="white" />
@@ -132,6 +141,7 @@ const Navbar = () => {
                         <a
                             className="flex justify-between items-center w-full px-[13px]"
                             href="/"
+                            target="blank"
                         >
                             <span className="text-white text-sm">Email</span>
                             <AiFillMail size={25} color="white" />
@@ -143,6 +153,7 @@ const Navbar = () => {
                         <a
                             className="flex justify-between items-center w-full px-[13px]"
                             href="/"
+                            target="blank"
                         >
                             <span className="text-white text-sm">Resume</span>
                             <BsFillFileEarmarkPersonFill
@@ -153,7 +164,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
     );
 };
 
