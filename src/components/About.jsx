@@ -20,7 +20,7 @@ const About = () => {
         <h3 className="uppercase font-bold pb-10 text-4xl text-center sm:my-10 md:hidden">
           About Me
         </h3>
-        <p className="w-[100%] text-justify  lg:text-xl">
+        <p className="w-[100%] text-justify pb-6 md:pb-0 lg:text-xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
           consequatur iusto eveniet autem, pariatur ad tempora illum, ratione
           laudantium dolorem deleniti quibusdam! Quibusdam modi earum, dolore
@@ -32,52 +32,52 @@ const About = () => {
           Skills
         </h4>
 
-        <div className="flex items-center justify-between w-[100%] sm:my-10 md:my-0">
+        <div className="flex items-center justify-between mx-auto w-[80%] md:w-full lg:w-[80%] sm:my-10 md:my-0">
           <div className="group flex relative">
             <DiHtml5 size={35} />
-            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto">
+            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto dark:text-darkText">
               HTML5
             </span>
           </div>
 
           <div className="group flex relative">
             <DiCss3 size={35} />
-            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/4 opacity-0 m-1 mx-auto">
+            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/4 opacity-0 m-1 mx-auto dark:text-darkText">
               CSS3
             </span>
           </div>
 
           <div className="group flex relative">
             <DiJavascript size={35} />
-            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto">
+            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto dark:text-darkText">
               JavaScript
             </span>
           </div>
 
           <div className="group flex relative">
             <BsGit size={32} />
-            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-6 translate-x-1 opacity-0 m-1 mx-auto">
+            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-6 translate-x-1 opacity-0 m-1 mx-auto dark:text-darkText">
               Git
             </span>
           </div>
 
           <div className="group flex relative">
             <DiReact size={35} />
-            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto">
+            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto dark:text-darkText">
               React
             </span>
           </div>
 
           <div className="group flex relative">
             <SiTailwindcss size={35} />
-            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto">
+            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto dark:text-darkText">
               Tailwind
             </span>
           </div>
 
           <div className="group flex relative">
             <TbBrandNextjs size={35} />
-            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto">
+            <span className="group-hover:opacity-100 transition-opacity px-1 text-md text-primary  absolute right-1 -translate-y-5 translate-x-1/3 opacity-0 m-1 mx-auto dark:text-darkText">
               NextJS
             </span>
           </div>

@@ -67,7 +67,11 @@ const Footer = ({ darkMode }) => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-500 text-center dark:text-gray-400">
           © 2023{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
+          <a
+            href="https://github.com/lattapanr"
+            target="blank"
+            className="hover:underline"
+          >
             Lattapan™
           </a>
           . All Rights Reserved.
