@@ -9,7 +9,7 @@ import "../index.css";
 
 const Work = () => {
   return (
-    <div name="work" className="w-full md:h-screen text-primary">
+    <div name="work" className="w-full text-primary">
       <div className="max-w-[1000px] mx-auto w-[85%] sm:w-full p-4 flex flex-col justify-center h-full">
         <div className="pb-10">
           <h3 className="uppercase text-4xl text-primary dark:text-white font-bold">
@@ -18,7 +18,7 @@ const Work = () => {
         </div>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 gap-8">
+        <div id="work" className="grid sm:grid-cols-2 gap-8">
           {/* Grid item 1*/}
           <div
             style={{ backgroundImage: `url(${Img1})` }}

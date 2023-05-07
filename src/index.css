@@ -36,3 +36,7 @@
 .dark {
   @apply bg-darkBg text-darkText;
 }
+
+body {
+  /* overflow: hidden; */
+}

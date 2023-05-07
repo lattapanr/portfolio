@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -15,14 +16,16 @@ function App() {
     setDarkMode(!darkMode);
   };
   return (
-    <div className={`bg-[#f2f4f3] ${darkMode ? "dark" : ""}`}>
+    <>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Home darkMode={darkMode} />
-      <About />
-      <Work />
-      <Contact />
-      <Footer />
-    </div>
+      <div className={`bg-[#f2f4f3] ${darkMode ? "dark" : ""}`}>
+        <Home darkMode={darkMode} />
+        <About />
+        <Work />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
 

@@ -5,7 +5,7 @@ import MePhoto from "../assets/pisa.jpg";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen">
+    <div id="home" name="home" className="w-full h-screen">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto flex flex-col justify-center items-center h-full font-tenor font-light leading-[3.5rem] md:leading-[4rem] xl:leading-[5rem] text-[55px] md:text-[65px] xl:text-[75px] uppercase tracking-widest">
         <h1 className="mt-[90px] animate-[fade-right_1.5s_ease-in-out]">
