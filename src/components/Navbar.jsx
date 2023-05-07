@@ -37,17 +37,17 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </div>
 
           {/* Desktop menu */}
-          <ul className="hidden w-[300px] justify-between text-xl xl:w-[360px] xl:text-2xl md:flex active:underline">
-            <li>
+          <ul className="hidden w-[300px] justify-between text-xl xl:w-[360px] xl:text-2xl md:flex">
+            <li className="hover:underline">
               <AnchorLink href="#home">Home</AnchorLink>
             </li>
-            <li>
+            <li className="hover:underline">
               <AnchorLink href="#about">About</AnchorLink>
             </li>
-            <li>
+            <li className="hover:underline">
               <AnchorLink href="#work">Work</AnchorLink>
             </li>
-            <li>
+            <li className="hover:underline">
               <AnchorLink href="#contact">Contact</AnchorLink>
             </li>
           </ul>
@@ -105,6 +105,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         ) : (
           ""
         )}
+
         {/* Social icons */}
         <div className="hidden md:flex fixed flex-col top-[35%] left-0">
           <ul>
@@ -113,7 +114,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <a
                 className="flex justify-between items-center w-full px-[13px]"
                 href="https://github.com/lattapanr"
-                target="blank"
+                target="_blank"
               >
                 <span className="text-white text-sm">Github</span>
                 <FaGithub size={25} color="white" />
@@ -124,8 +125,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
               <a
                 className="flex justify-between items-center w-full px-[13px]"
-                href="/"
-                target="blank"
+                href="https://linkedin.com/in/lattapan"
+                target="_blank"
               >
                 <span className="text-sm text-white">Linkedin</span>
                 <FaLinkedin size={25} color="white" />
@@ -137,7 +138,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <a
                 className="flex justify-between items-center w-full px-[13px]"
                 href="/"
-                target="blank"
+                target="_blank"
               >
                 <span className="text-white text-sm">Email</span>
                 <AiFillMail size={25} color="white" />
@@ -149,7 +150,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <a
                 className="flex justify-between items-center w-full px-[13px]"
                 href="/"
-                target="blank"
+                target="_blank"
               >
                 <span className="text-white text-sm">Resume</span>
                 <BsFillFileEarmarkPersonFill size={25} color="white" />

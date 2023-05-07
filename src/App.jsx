@@ -16,16 +16,16 @@ function App() {
     setDarkMode(!darkMode);
   };
   return (
-    <>
+    <div className={`bg-[#f2f4f3] ${darkMode ? "dark" : ""}`}>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <div className={`bg-[#f2f4f3] ${darkMode ? "dark" : ""}`}>
+      <div>
         <Home darkMode={darkMode} />
         <About />
         <Work />
         <Contact />
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 
