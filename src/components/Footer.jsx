@@ -12,7 +12,9 @@ const Footer = () => {
         <div className="flex items-center justify-between">
           <div>
             <span className="uppercase sm:text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Lattapan
+              <a href="https://github.com/lattapanr" target="_blank">
+                Lattapan
+              </a>
             </span>
           </div>
           <ul className="flex flex-wrap items-center justify-between w-[180px] sm:w-[250px]  cursor-pointer">
