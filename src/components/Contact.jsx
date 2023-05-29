@@ -1,6 +1,4 @@
-/** @format */
-
-import React from "react";
+import React, { useState } from "react";
 import ContactImage from "../assets/contactimage.jpg";
 
 const Contact = () => {
@@ -17,7 +15,10 @@ const Contact = () => {
           </h3>
         </div>
 
-        <form className="">
+        <form
+          action="https://getform.io/f/4775d1dc-3696-4209-9d11-5f51e3768ecc"
+          method="POST"
+        >
           <div className="relative z-0 w-full mb-6 group">
             <input
               type="text"
