@@ -1,2 +1,2 @@
 # portfolio
-Portfolio site in process
+Portfolio site in progress

@@ -11,32 +11,28 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: Tenor Sans;
-  }
+    html {
+        font-family: Tenor Sans;
+    }
 }
 
 @font-face {
-  font-family: "atteron";
-  src: url("../src/assets/Atteron.ttf");
+    font-family: "atteron";
+    src: url("../src/assets/Atteron.ttf");
 }
 
 .content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
 }
 
 .content-div:hover {
-  background: #1c1918 !important;
-  /* passing styles through style element on React, apparently makes React neglect the styles, so needed to declare "!important */
+    background: #1c1918 !important;
+    /* passing styles through style element on React, apparently makes React neglect the styles, so needed to declare "!important */
 }
 
 .dark {
-  @apply bg-darkBg text-darkText;
+    @apply bg-darkBg text-darkText;
 }
 
 body {
-  /* overflow: hidden; */
+    /* overflow: hidden; */
 }
