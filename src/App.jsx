@@ -10,23 +10,23 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-  return (
-    <>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <div className={`bg-[#f2f4f3] ${darkMode ? "dark" : ""}`}>
-        <Home darkMode={darkMode} />
-        <About />
-        <Work />
-        <Contact />
-        <Footer />
-      </div>
-    </>
-  );
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+    return (
+        <>
+            <div className={`bg-[#f2f4f3] ${darkMode ? "dark" : ""}`}>
+                <Navbar toggleDarkMode={toggleDarkMode} />
+                <Home />
+                <About />
+                <Work />
+                <Contact />
+                <Footer />
+            </div>
+        </>
+    );
 }
 
 export default App;
