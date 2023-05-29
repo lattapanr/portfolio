@@ -23,41 +23,51 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <nav className="fixed bg-white/90 dark:bg-primary/90 w-full z-[1000]">
       <div className="max-w-screen-xl mx-auto text-primary dark:text-darkText px-4">
         <div className="h-[80px] flex justify-between items-center">
-          {/* Dark mode icon */}
-          <div
-            color={"#1C1918"}
-            onClick={toggleDarkMode}
-            className="cursor-pointer"
-          >
-            {!darkMode ? (
-              <BsFillMoonFill size={22} />
-            ) : (
-              <BsFillSunFill size={22} />
-            )}
+          <div>
+            <span className="uppercase sm:text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <a href="https://github.com/lattapanr" target="_blank">
+                Lattapan
+              </a>
+            </span>
           </div>
 
-          {/* Desktop menu */}
-          <ul className="hidden w-[300px] justify-between text-xl xl:w-[360px] xl:text-2xl md:flex">
-            <li className="hover:underline">
-              <AnchorLink href="#home">Home</AnchorLink>
-            </li>
-            <li className="hover:underline">
-              <AnchorLink href="#about">About</AnchorLink>
-            </li>
-            <li className="hover:underline">
-              <AnchorLink href="#work">Work</AnchorLink>
-            </li>
-            <li className="hover:underline">
-              <AnchorLink href="#contact">Contact</AnchorLink>
-            </li>
-          </ul>
+          <div className="flex items-center gap-6">
+            {/* Desktop menu */}
+            <ul className="hidden w-[300px] justify-between text-xl xl:w-[360px] xl:text-2xl md:flex">
+              <li className="hover:underline">
+                <AnchorLink href="#home">Home</AnchorLink>
+              </li>
+              <li className="hover:underline">
+                <AnchorLink href="#about">About</AnchorLink>
+              </li>
+              <li className="hover:underline">
+                <AnchorLink href="#work">Work</AnchorLink>
+              </li>
+              <li className="hover:underline">
+                <AnchorLink href="#contact">Contact</AnchorLink>
+              </li>
+            </ul>
+
+            {/* Dark mode icon */}
+            <div
+              color={"#1C1918"}
+              onClick={toggleDarkMode}
+              className="cursor-pointer"
+            >
+              {!darkMode ? (
+                <BsFillMoonFill size={18} />
+              ) : (
+                <BsFillSunFill size={18} />
+              )}
+            </div>
+          </div>
 
           {/* Hamburger */}
           <div
             onClick={handleNav}
-            className="absolute top-8 right-4 z-[9999] md:hidden"
+            className="absolute top-8 right-11 z-[9999] md:hidden"
           >
-            {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
+            {!nav ? <FaBars size={18} /> : <FaTimes size={20} />}
           </div>
         </div>
 
