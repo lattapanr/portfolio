@@ -1,11 +1,33 @@
-/** @format */
-
-import React from "react";
-import EtchASketch from "../assets/etch-a-sketch.png";
+import EtchASketch from "../assets/projects/etch-a-sketch.png";
 import Img1 from "../assets/image2.jpg";
 import Img2 from "../assets/image3.jpg";
-import Img3 from "../assets/image4.jpg";
+import FitnessPal from "../assets/projects/fitness-pal.png";
 import "../index.css";
+
+const ProjectItem = ({ image, title, demoLink, codeLink }) => (
+  <div
+    style={{ backgroundImage: `url(${image})` }}
+    className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto content-div"
+  >
+    <div className="opacity-0 group-hover:opacity-100 transition group-hover:duration-500">
+      <span className="text-2xl font-bold text-white tracking-wide">
+        {title}
+      </span>
+      <div className="flex justify-center">
+        <a href={demoLink} target="_blank">
+          <button className="text-center px-4 py-3  m-2 bg-white text-primary font-bold text-lg">
+            Demo
+          </button>
+        </a>
+        <a href={codeLink} target="_blank">
+          <button className="text-center px-4 py-3  m-2 bg-white text-primary font-bold text-lg">
+            Code
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
 const Work = () => {
   return (
@@ -17,189 +39,34 @@ const Work = () => {
           </h3>
         </div>
 
-        {/* Container */}
         <div id="work" className="grid sm:grid-cols-2 gap-8">
-          {/* Grid item 1*/}
-          <div
-            style={{ backgroundImage: `url(${Img1})` }}
-            className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover effects */}
-            <div className="opacity-0 group-hover:opacity-100 transition group-hover:duration-500">
-              <span className="text-2xl font-bold text-white tracking-wide">
-                React JS Application
-              </span>
-              <div className="flex justify-center">
-                <a href="" target="blank">
-                  <button
-                    className="text-center
-                                    px-4
-                                    py-3
-                                    m-2
-                                    bg-white
-                                    text-primary
-                                    font-bold
-                                    text-lg"
-                  >
-                    Demo
-                  </button>
-                </a>
+          <ProjectItem
+            image={Img1}
+            title="React JS Application"
+            demoLink=""
+            codeLink=""
+          />
 
-                <a href="" target="blank">
-                  <button
-                    className="text-center
-                                        px-4
-                                        py-3
-                                        m-2
-                                        bg-white
-                                        text-primary
-                                        font-bold
-                                        text-lg"
-                  >
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+          <ProjectItem
+            image={Img2}
+            title="React JS Application"
+            demoLink=""
+            codeLink=""
+          />
 
-          {/* Grid item 2*/}
-          <div
-            style={{ backgroundImage: `url(${Img2})` }}
-            className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover effects */}
-            <div className="opacity-0 group-hover:opacity-100 transition group-hover:duration-500">
-              <span className="text-2xl font-bold text-white ">
-                React JS Application
-              </span>
-              <div className="flex justify-center">
-                <a href="" target="blank">
-                  <button
-                    className="text-center
-                                    px-4
-                                    py-3
-                                    m-2
-                                    bg-white
-                                    text-primary
-                                    font-bold
-                                    text-lg"
-                  >
-                    Demo
-                  </button>
-                </a>
+          <ProjectItem
+            image={FitnessPal}
+            title="React JS Application"
+            demoLink=""
+            codeLink="https://github.com/lattapanr/fitness-pal"
+          />
 
-                <a href="" target="blank">
-                  <button
-                    className="text-center
-                                        px-4
-                                        py-3
-                                        m-2
-                                        bg-white
-                                        text-primary
-                                        font-bold
-                                        text-lg"
-                  >
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid item 3*/}
-          <div
-            style={{ backgroundImage: `url(${Img3})` }}
-            className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover effects */}
-            <div className="opacity-0 group-hover:opacity-100 transition group-hover:duration-500">
-              <span className="text-2xl font-bold text-white tracking-wide">
-                React JS Application
-              </span>
-              <div className="flex justify-center">
-                <a href="" target="blank">
-                  <button
-                    className="text-center
-                                    px-4
-                                    py-3
-                                    m-2
-                                    bg-white
-                                    text-primary
-                                    font-bold
-                                    text-lg"
-                  >
-                    Demo
-                  </button>
-                </a>
-
-                <a href="" target="blank">
-                  <button
-                    className="text-center
-                                        px-4
-                                        py-3
-                                        m-2
-                                        bg-white
-                                        text-primary
-                                        font-bold
-                                        text-lg"
-                  >
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid item 4*/}
-          <div
-            style={{ backgroundImage: `url(${EtchASketch})` }}
-            className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover effects */}
-            <div className="opacity-0 group-hover:opacity-100 transition group-hover:duration-500">
-              <span className="text-2xl font-bold text-white tracking-wide">
-                Grid Drawing Game
-              </span>
-              <div className="flex justify-center">
-                <a
-                  href="https://etch-a-sketch-wheat.vercel.app/"
-                  target="blank"
-                >
-                  <button
-                    className="text-center
-                                    px-4
-                                    py-3
-                                    m-2
-                                    bg-white
-                                    text-primary
-                                    font-bold
-                                    text-lg"
-                  >
-                    Demo
-                  </button>
-                </a>
-
-                <a
-                  href="https://github.com/lattapanr/etch-a-sketch"
-                  target="blank"
-                >
-                  <button
-                    className="text-center
-                                        px-4
-                                        py-3
-                                        m-2
-                                        bg-white
-                                        text-primary
-                                        font-bold
-                                        text-lg"
-                  >
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+          <ProjectItem
+            image={EtchASketch}
+            title="Grid Drawing Game"
+            demoLink="https://etch-a-sketch-wheat.vercel.app/"
+            codeLink="https://github.com/lattapanr/etch-a-sketch"
+          />
         </div>
       </div>
     </div>
