@@ -24,12 +24,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 <div className="h-[80px] flex justify-between items-center">
                     <div>
                         <span className="uppercase text-xl sm:text-2xl font-semibold whitespace-nowrap dark:text-white">
-                            <a
-                                href="https://github.com/lattapanr"
-                                target="_blank"
-                            >
-                                Lattapan
-                            </a>
+                            <a href="#home">Lattapan</a>
                         </span>
                     </div>
 
