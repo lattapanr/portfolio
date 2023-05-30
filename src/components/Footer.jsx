@@ -1,9 +1,6 @@
-/** @format */
-
-import React from "react";
 import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
-import { FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
