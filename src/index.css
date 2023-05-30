@@ -21,9 +21,6 @@
     src: url("../src/assets/Atteron.ttf");
 }
 
-.content-div {
-}
-
 .content-div:hover {
     background: #1c1918 !important;
     /* passing styles through style element on React, apparently makes React neglect the styles, so needed to declare "!important */
@@ -31,8 +28,4 @@
 
 .dark {
     @apply bg-darkBg text-darkText;
-}
-
-body {
-    /* overflow: hidden; */
 }

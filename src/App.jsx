@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { useState } from "react";
 
 import Navbar from "./components/Navbar";
@@ -18,7 +16,7 @@ function App() {
     return (
         <>
             <div className={`bg-[#f2f4f3] ${darkMode ? "dark" : ""}`}>
-                <Navbar toggleDarkMode={toggleDarkMode} />
+                <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <Home />
                 <About />
                 <Work />
