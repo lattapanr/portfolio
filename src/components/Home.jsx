@@ -1,13 +1,11 @@
-/** @format */
-
 import React from "react";
-import MePhoto from "../assets/pisa.jpg";
+import MePhoto from "../assets/profile.jpg";
 
 const Home = () => {
   return (
     <div id="home" name="home" className="w-full h-screen">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center items-center h-full font-tenor font-light leading-[3.5rem] md:leading-[4rem] xl:leading-[5rem] text-[55px] md:text-[65px] xl:text-[75px] uppercase tracking-widest">
+      <div className="max-w-[1000px] mx-auto flex flex-col justify-center items-center h-full font-tenor font-light leading-[2rem] md:leading-[3rem] xl:leading-[3.5rem] text-[2.25rem] md:text-[3.5rem] xl:text-[4rem] uppercase tracking-widest">
         <h1 className="mt-[90px] animate-[fade-right_1.5s_ease-in-out]">
           Lattapan
         </h1>

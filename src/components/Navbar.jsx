@@ -23,7 +23,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       <div className="max-w-screen-xl mx-auto text-primary dark:text-darkText px-4">
         <div className="h-[80px] flex justify-between items-center">
           <div>
-            <span className="uppercase sm:text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="uppercase text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
               <a href="https://github.com/lattapanr" target="_blank">
                 Lattapan
               </a>

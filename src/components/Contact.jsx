@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import ContactImage from "../assets/contactimage.jpg";
+import ContactImage from "../assets/contact.jpg";
 
 const Contact = () => {
   return (
@@ -10,7 +9,7 @@ const Contact = () => {
       <div className="max-w-[500px]">
         <div className="mb-8">
           <p className="text-xl">Lattapan</p>
-          <h3 className="uppercase w-full text-[45px] lg:text-[55px] leading-[3rem]">
+          <h3 className="uppercase w-full text-4xl lg:text-5xl leading-[3rem]">
             Let's work together
           </h3>
         </div>
@@ -97,7 +96,7 @@ const Contact = () => {
       <img
         src={ContactImage}
         alt=""
-        className="hidden md:flex h-[350px] w-[230px] lg:h-[430px] lg:w-[300px] shadow-primary shadow-sm"
+        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[280px] shadow-primary shadow-sm"
       />
     </div>
   );
