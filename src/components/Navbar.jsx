@@ -116,7 +116,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         )}
 
         {/* Social icons */}
-        <div className="hidden md:flex fixed flex-col top-[35%] left-0">
+        <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
           <ul>
             {/* Github icon */}
             <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
