@@ -23,19 +23,24 @@ const About = () => {
         <h3 className="uppercase font-bold text-3xl text-center my-10 lg:hidden">
           About Me
         </h3>
-        <p className="w-[100%] text-center  lg:text-lg pb-6 lg:pb-0">
-          I'm Lattapan (I also go by Noey), a frontend web developer. I'm
-          experienced in HTML, CSS, JavaScript, React, and Tailwind. Currently
-          exploring NextJS and learning about databases and user authentication.
-          <br />
-          <br />
-          With previous experience in administration and customer service, I
-          bring attention to detail, problem-solving, and communication skills
-          to my work.
-          <br />
-          <br />
+        <p className="w-[100%] text-center lg:text-lg pb-6 lg:pb-0">
+          I'm Lattapan (I also go by Noey), a frontend web developer. With a
+          strong command of HTML, CSS, JavaScript, React, and Tailwind, I bring
+          valuable expertise to projects. Currently, I'm delving into NextJS,
+          expanding my knowledge of databases, and exploring user
+          authentication.
+        </p>
+
+        <p className="text-center lg:text-lg pb-6 lg:pb-0">
+          Design is another aspect I thoroughly enjoy. My personal style leans
+          towards clean, minimal, and modern aesthetics. Still, the most
+          exciting part is building those designs.
+        </p>
+
+        <p className="text-center lg:text-lg pb-6 lg:pb-0">
           Let's collaborate and create something amazing together!
         </p>
+
         <h4 className="uppercase pb-8 md:pb-0 font-bold mt-4 text-xl text-center">
           Skills
         </h4>
