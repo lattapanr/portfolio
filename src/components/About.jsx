@@ -24,7 +24,7 @@ const About = () => {
           About Me
         </h3>
         <p className="w-[100%] text-center  lg:text-lg pb-6 lg:pb-0">
-          I'm Lattapan (or call me Noey), a frontend web developer. I'm
+          I'm Lattapan (I also go by Noey), a frontend web developer. I'm
           experienced in HTML, CSS, JavaScript, React, and Tailwind. Currently
           exploring NextJS and learning about databases and user authentication.
           <br />
