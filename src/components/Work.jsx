@@ -1,6 +1,6 @@
 import EtchASketch from "../assets/projects/etch-a-sketch.png";
-import AddToCart from "../assets/projects/addToCart.png";
-import Portofolio from "../assets/projects/portfolio.png";
+import BeautyHive from "../assets/projects/beautyHive.png";
+import Portfolio from "../assets/projects/portfolio.png";
 import FitnessPal from "../assets/projects/fitnessPal.png";
 import "../index.css";
 
@@ -44,7 +44,7 @@ const Work = () => {
 
         <div id="work" className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            image={Portofolio}
+            image={Portfolio}
             title="Portfolio Website"
             desc="This responsive portfolio website is built using React and Tailwind CSS. It showcases my work and provides a live contact form for easy communication. Also, it offers light and dark mode for visitor's visual themes preference"
             demoLink=""
@@ -52,9 +52,9 @@ const Work = () => {
           />
 
           <ProjectItem
-            image={AddToCart}
-            title="Add-to-Cart"
-            desc="A shopping list app created with HTML, CSS, JavaScript and Firebase's Realtime Database."
+            image={BeautyHive}
+            title="Beauty Hive"
+            desc="Beauty Hive: A modern React website showcasing MakeupAPI's products. Search by brand, explore face, eye, and lip categories. Developed with React, React Router, and optimized API calls."
             demoLink="https://add-to-cart-alpha.vercel.app/"
             codeLink="https://github.com/lattapanr/add-to-cart"
           />
