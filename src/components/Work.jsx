@@ -58,8 +58,8 @@ const Work = () => {
             image={BeautyHive}
             title="Beauty Hive"
             desc="Beauty Hive: A modern React website showcasing MakeupAPI's products. Search by brand, explore face, eye, and lip categories. Developed with React, React Router, and optimized API calls."
-            demoLink="https://add-to-cart-alpha.vercel.app/"
-            codeLink="https://github.com/lattapanr/add-to-cart"
+            demoLink="https://beauty-hive.vercel.app/"
+            codeLink="https://github.com/lattapanr/beauty-hive"
           />
 
           <ProjectItem
