@@ -14,7 +14,7 @@ const Home = () => {
         <img
           src={MePhoto}
           alt="my photo"
-          className="h-[280px] w-[200px] object-cover xl:h-[350px] xl:w-[250px] shadow-sm shadow-primary "
+          className="h-[280px] w-[200px] object-cover xl:h-[350px] xl:w-[250px] shadow-sm shadow-primary"
         />
       </div>
     </div>

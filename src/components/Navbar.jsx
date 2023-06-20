@@ -24,9 +24,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div className="h-[80px] flex justify-between items-center">
           <div>
             <span className="uppercase text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
-              <a href="https://github.com/lattapanr" target="_blank">
-                Lattapan
-              </a>
+              <a href="/">Lattapan</a>
             </span>
           </div>
 
@@ -146,8 +144,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
               <a
                 className="flex justify-between items-center w-full px-[13px]"
-                href="/"
-                target="_blank"
+                href="#contact"
               >
                 <span className="text-white text-sm">Email</span>
                 <AiFillMail size={25} color="white" />

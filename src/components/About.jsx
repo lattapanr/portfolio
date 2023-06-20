@@ -1,4 +1,4 @@
-import Img1 from "../assets/image1.jpg";
+import AboutImage from "../assets/aboutImage.jpg";
 import { DiHtml5, DiCss3, DiJavascript, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
@@ -13,13 +13,17 @@ const About = () => {
         <h3 className="hidden uppercase font-bold text-[35px] lg:text-[40px] leading-7 lg:flex justify-center">
           About Me
         </h3>
-        <img src={Img1} alt="my photo" />
+        <img
+          src={AboutImage}
+          alt="my photo"
+          className="shadow-sm shadow-primary"
+        />
       </div>
       <div className="w-[80%] lg:w-[65%] md:flex justify-center flex-col items-center gap-6 lg:h-[300px] md:justify-between">
         <h3 className="uppercase font-bold text-3xl text-center my-10 lg:hidden">
           About Me
         </h3>
-        <p className="w-[100%] text-center pb-6 lg:pb-0">
+        <p className="w-[100%] text-center  lg:text-lg pb-6 lg:pb-0">
           I'm Lattapan (or call me Noey), a frontend web developer. I'm
           experienced in HTML, CSS, JavaScript, React, and Tailwind. Currently
           exploring NextJS and learning about databases and user authentication.

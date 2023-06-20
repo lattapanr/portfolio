@@ -7,13 +7,13 @@ import "../index.css";
 const ProjectItem = ({ image, title, desc, demoLink, codeLink }) => (
   <div
     style={{ backgroundImage: `url(${image})` }}
-    className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto bg-cover bg-no-repeat bg-center h-[240px] max-w-[400px] content_div"
+    className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto bg-cover bg-no-repeat bg-center h-[180px] sm:h-[260px] max-w-[300px] sm:max-w-[420px] content_div"
   >
     <div className="opacity-0 group-hover:opacity-100 transition group-hover:duration-500">
       <h3 className="text-xl text-center font-bold text-white tracking-wide">
         {title}
       </h3>
-      <p className="text-white text-center text-sm lg:text-md px-2 lg:px-6">
+      <p className="text-white text-center text-xs sm:text-sm lg:text-md px-2 lg:px-6">
         {desc}
       </p>
       <div className="flex justify-center">
@@ -34,15 +34,18 @@ const ProjectItem = ({ image, title, desc, demoLink, codeLink }) => (
 
 const Work = () => {
   return (
-    <div name="work" className="w-full text-primary">
-      <div className="max-w-[1000px] mx-auto w-[85%] sm:w-full p-4 flex flex-col justify-center h-full">
+    <div
+      id="work"
+      className="w-full text-primary mb-[10rem] mt-[10rem] lg:mt-0 md:mb-0"
+    >
+      <div className="max-w-[1000px] mx-auto w-[85%] sm:w-full p-4 flex flex-col justify-center h-screen">
         <div className="pb-10">
           <h3 className="uppercase text-3xl md:text-4xl text-primary dark:text-white font-bold">
             Featured Projects
           </h3>
         </div>
 
-        <div id="work" className="grid md:grid-cols-2 gap-8">
+        <div id="work" className="grid lg:grid-cols-2 gap-8">
           <ProjectItem
             image={Portfolio}
             title="Portfolio Website"
