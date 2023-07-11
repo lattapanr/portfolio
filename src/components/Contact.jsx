@@ -1,10 +1,10 @@
-import ContactImage from "../assets/contactImage.jpg";
+import CodingIllustration from "../assets/coding.png";
 
 const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-[75%] h-screen max-w-[1000px] mx-auto flex justify-center items-center md:justify-between gap-8"
+      className="w-[75%] h-screen max-w-[1000px] mx-auto flex justify-center items-center md:justify-between gap-20"
     >
       <div className="max-w-[500px]">
         <div className="mb-8">
@@ -94,9 +94,9 @@ const Contact = () => {
         </form>
       </div>
       <img
-        src={ContactImage}
-        alt=""
-        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[280px] shadow-primary shadow-sm"
+        src={CodingIllustration}
+        alt="coding illustration"
+        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[280px] "
       />
     </div>
   );
