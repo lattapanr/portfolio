@@ -1,13 +1,13 @@
-import EtchASketch from "../assets/projects/etch-a-sketch.png";
 import BeautyHive from "../assets/projects/beautyHive.png";
 import Portfolio from "../assets/projects/portfolio.png";
 import FitnessPal from "../assets/projects/fitnessPal.png";
+import TalkBack from "../assets/projects/talkBack.png";
 import "../index.css";
 
 const ProjectItem = ({ image, title, desc, demoLink, codeLink }) => (
   <div
     style={{ backgroundImage: `url(${image})` }}
-    className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto bg-cover bg-no-repeat bg-center h-[180px] sm:h-[260px] max-w-[300px] sm:max-w-[420px] content_div"
+    className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto bg-cover bg-no-repeat bg-center h-[180px] sm:h-[260px] max-w-[310px] sm:max-w-[420px] content_div"
   >
     <div className="opacity-0 group-hover:opacity-100 transition group-hover:duration-500">
       <h3 className="text-xl text-center font-bold text-white tracking-wide">
@@ -36,7 +36,7 @@ const Work = () => {
   return (
     <div
       id="work"
-      className="w-full text-primary mb-[10rem] mt-[10rem] lg:mt-0 md:mb-0"
+      className="w-full text-primary mb-[10rem] mt-[10rem] lg:mt-0 lg:mb-0"
     >
       <div className="max-w-[1000px] mx-auto w-[85%] sm:w-full p-4 flex flex-col justify-center h-screen">
         <div className="pb-10">
@@ -71,11 +71,11 @@ const Work = () => {
           />
 
           <ProjectItem
-            image={EtchASketch}
-            desc="Etch-a-Sketch is a game where you can draw on a grid pad. You can change the color of your pen and the size of the grid. Built with HTML, CSS and JavaScript"
-            title="Grid Drawing Game"
-            demoLink="https://etch-a-sketch-wheat.vercel.app/"
-            codeLink="https://github.com/lattapanr/etch-a-sketch"
+            image={TalkBack}
+            title="TalkBack"
+            desc="TalkBack is a React-based AI chat assistant that translates user input messages into various communication styles using OpenAI's text generation models."
+            demoLink="https://talk-back-ten.vercel.app/"
+            codeLink="https://github.com/lattapanr/talk-back"
           />
         </div>
       </div>
