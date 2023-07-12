@@ -1,12 +1,12 @@
-import ContactImage from "../assets/contactImage.jpg";
+import CodingIllustration from "../assets/coding.png";
 
 const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-[75%] h-screen max-w-[1000px] mx-auto flex justify-center items-center md:justify-between gap-8"
+      className="w-[75%] h-screen max-w-[1000px] mx-auto flex justify-center items-center md:justify-between gap-20"
     >
-      <div className="max-w-[500px]">
+      <div className="max-w-max">
         <div className="mb-8">
           <p className="text-xl">Lattapan</p>
           <h3 className="uppercase w-full text-4xl lg:text-5xl leading-[3rem]">
@@ -29,7 +29,7 @@ const Contact = () => {
             />
             <label
               htmlFor="contactName"
-              className="peer-focus:font-medium absolute text-lg text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Name
             </label>
@@ -45,7 +45,7 @@ const Contact = () => {
             />
             <label
               htmlFor="email"
-              className="peer-focus:font-medium absolute text-lg text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Email
             </label>
@@ -62,7 +62,7 @@ const Contact = () => {
             />
             <label
               htmlFor="subject"
-              className="peer-focus:font-medium absolute text-lg text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Subject
             </label>
@@ -79,7 +79,7 @@ const Contact = () => {
             />
             <label
               htmlFor="message"
-              className="peer-focus:font-medium absolute text-lg text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-md text-primary dark:text-white duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Message
             </label>
@@ -94,9 +94,9 @@ const Contact = () => {
         </form>
       </div>
       <img
-        src={ContactImage}
-        alt=""
-        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[280px] shadow-primary shadow-sm"
+        src={CodingIllustration}
+        alt="coding illustration"
+        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[280px] "
       />
     </div>
   );

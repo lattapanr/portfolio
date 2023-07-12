@@ -1,5 +1,5 @@
 import React from "react";
-import MePhoto from "../assets/profile.jpg";
+import MyPhoto from "../assets/profile.jpg";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
         <h2>Frontend</h2>
         <h2 className="animate-[fade-right_1.5s_ease-in-out]">Developer</h2>
         <img
-          src={MePhoto}
+          src={MyPhoto}
           alt="my photo"
           className="h-[280px] w-[200px] object-cover xl:h-[350px] xl:w-[250px] shadow-sm shadow-primary"
         />
