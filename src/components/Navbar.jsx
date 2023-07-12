@@ -12,6 +12,18 @@ import {
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaTimes, FaBars } from "react-icons/fa";
 
+const SocialIcon = ({ icon, link, title }) => (
+  <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
+    <a
+      className="flex justify-between items-center w-full px-[13px]"
+      href={link}
+    >
+      <span className="text-white text-sm">{title}</span>
+      {icon}
+    </a>
+  </li>
+);
+
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [nav, setNav] = useState(false);
 
@@ -71,12 +83,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
         {/* Mobile menu */}
         {nav ? (
-          <div className="">
+          <div>
             <div className="fixed w-full h-full bg-white flex flex-col justify-center items-center dark:bg-darkBg opacity-100 z-50 inset-0">
               <AnchorLink
                 onClick={handleNav}
                 href="#home"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <AiFillHome size={20} />
                 <span className="pl-4 font-header uppercase">Home</span>
@@ -85,7 +97,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <AnchorLink
                 onClick={handleNav}
                 href="#about"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <BsPersonFill size={20} />
                 <span className="pl-4 font-header uppercase">About</span>
@@ -94,7 +106,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <AnchorLink
                 onClick={handleNav}
                 href="#work"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <AiFillProject size={20} />
                 <span className="pl-4 font-header uppercase">Work</span>
@@ -103,7 +115,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <AnchorLink
                 onClick={handleNav}
                 href="#contact"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <IoMdMail size={20} />
                 <span className="pl-4 font-header uppercase">Contact</span>
@@ -118,51 +130,35 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
           <ul>
             {/* Github icon */}
-            <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
-              <a
-                className="flex justify-between items-center w-full px-[13px]"
-                href="https://github.com/lattapanr"
-                target="_blank"
-              >
-                <span className="text-white text-sm">Github</span>
-                <FaGithub size={25} color="white" />
-              </a>
-            </li>
+            <SocialIcon
+              icon={<FaGithub size={25} color="white" />}
+              link="https://github.com/lattapanr"
+              title="GitHub"
+              target="_blank"
+            />
 
             {/* Linkedin icon */}
-            <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
-              <a
-                className="flex justify-between items-center w-full px-[13px]"
-                href="https://linkedin.com/in/lattapan"
-                target="_blank"
-              >
-                <span className="text-sm text-white">Linkedin</span>
-                <FaLinkedin size={25} color="white" />
-              </a>
-            </li>
+            <SocialIcon
+              icon={<FaLinkedin size={25} color="white" />}
+              link="https://linkedin.com/in/lattapan"
+              title="LinkedIn"
+              target="_blank"
+            />
 
             {/* Email icon */}
-            <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
-              <a
-                className="flex justify-between items-center w-full px-[13px]"
-                href="#contact"
-              >
-                <span className="text-white text-sm">Email</span>
-                <AiFillMail size={25} color="white" />
-              </a>
-            </li>
+            <SocialIcon
+              icon={<AiFillMail size={25} color="white" />}
+              link="#contact"
+              title="Email"
+            />
 
             {/* Resume */}
-            <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
-              <a
-                className="flex justify-between items-center w-full px-[13px]"
-                href={ResumeFile}
-                target="_blank"
-              >
-                <span className="text-white text-sm">Resume</span>
-                <BsFillFileEarmarkPersonFill size={25} color="white" />
-              </a>
-            </li>
+            <SocialIcon
+              icon={<BsFillFileEarmarkPersonFill size={25} color="white" />}
+              link={ResumeFile}
+              title="Resume"
+              target="_blank"
+            />
           </ul>
         </div>
       </div>

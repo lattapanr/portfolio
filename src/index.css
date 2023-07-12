@@ -29,3 +29,7 @@
 .dark {
   @apply bg-darkBg text-darkText;
 }
+
+.mobile-nav {
+  @apply w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200;
+}
