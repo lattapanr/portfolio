@@ -75,7 +75,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <AnchorLink
                 onClick={handleNav}
                 href="#home"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <AiFillHome size={20} />
                 <span className="pl-4 font-header uppercase">Home</span>
@@ -84,7 +84,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <AnchorLink
                 onClick={handleNav}
                 href="#about"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <BsPersonFill size={20} />
                 <span className="pl-4 font-header uppercase">About</span>
@@ -93,7 +93,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <AnchorLink
                 onClick={handleNav}
                 href="#work"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <AiFillProject size={20} />
                 <span className="pl-4 font-header uppercase">Work</span>
@@ -102,7 +102,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <AnchorLink
                 onClick={handleNav}
                 href="#contact"
-                className="w-[60%] flex justify-center items-center rounded-sm shadow-lg bg-white dark:bg-primary m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                className="mobile-nav"
               >
                 <IoMdMail size={20} />
                 <span className="pl-4 font-header uppercase">Contact</span>
