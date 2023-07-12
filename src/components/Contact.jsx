@@ -96,7 +96,7 @@ const Contact = () => {
       <img
         src={CodingIllustration}
         alt="coding illustration"
-        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[280px] "
+        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[350px] "
       />
     </div>
   );
