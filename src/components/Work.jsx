@@ -36,7 +36,7 @@ const Work = () => {
   return (
     <div
       id="work"
-      className="w-full text-primary mb-[10rem] mt-[10rem] sm:mt-[20rem] lg:mt-0 lg:mb-0"
+      className="w-full text-primary mb-[10rem] mt-[10rem] lg:mt-0 lg:mb-0"
     >
       <div className="max-w-[1000px] mx-auto w-[85%] sm:w-full p-4 flex flex-col justify-center h-screen">
         <div className="pb-10">
