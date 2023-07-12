@@ -5,9 +5,7 @@ import ResumeFile from "../assets/Resume-Lattapan.pdf";
 
 const SocialIcon = ({ icon, link, hoverText }) => (
   <li className="group flex relative">
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      {icon}
-    </a>
+    <a href={link}>{icon}</a>
     <span className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white">
       {hoverText}
     </span>
@@ -28,13 +26,17 @@ const Footer = () => {
           <ul className="flex flex-wrap items-center justify-between w-[180px] sm:w-[250px]  cursor-pointer">
             <SocialIcon
               icon={<FaGithub size={30} />}
-              link="#"
+              link="https://github.com/lattapanr"
               hoverText="@lattapanr"
+              target="_blank"
+              rel="noopener noreferrer"
             />
             <SocialIcon
               icon={<FaLinkedin size={30} />}
               link="https://linkedin.com/in/lattapan"
               hoverText="linkedin.com/in/lattapan"
+              target="_blank"
+              rel="noopener noreferrer"
             />
             <SocialIcon
               icon={<IoMdMail size={30} />}
@@ -45,6 +47,8 @@ const Footer = () => {
               icon={<BsFillFileEarmarkPersonFill size={30} />}
               link={ResumeFile}
               hoverText="Resume"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </ul>
         </div>
