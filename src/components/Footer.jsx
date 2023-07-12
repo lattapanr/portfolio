@@ -2,6 +2,17 @@ import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+const SocialIcon = ({ icon, link, hoverText }) => (
+  <li className="group flex relative">
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      {icon}
+    </a>
+    <span className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white">
+      {hoverText}
+    </span>
+  </li>
+);
+
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-primary">
@@ -12,53 +23,31 @@ const Footer = () => {
               <a href="#home">Lattapan</a>
             </span>
           </div>
+
           <ul className="flex flex-wrap items-center justify-between w-[180px] sm:w-[250px]  cursor-pointer">
-            <li className="group flex relative">
-              <a href="#" target="_blank">
-                <FaGithub size={30} />
-              </a>
-              <span
-                className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 
-    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white"
-              >
-                @lattapanr
-              </span>
-            </li>
-            <li className="group flex relative">
-              <a href="https://linkedin.com/in/lattapan" target="_blank">
-                <FaLinkedin size={30} />
-              </a>
-              <span
-                className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 
-    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white"
-              >
-                linkedin.com/in/lattapan
-              </span>
-            </li>
-            <li className="group flex relative">
-              <a href="#contact">
-                <IoMdMail size={30} />
-              </a>
-              <span
-                className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 
-    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white"
-              >
-                lattapanr@gmail.com
-              </span>
-            </li>
-            <li className="group flex relative">
-              <a href="#" target="_blank">
-                <BsFillFileEarmarkPersonFill size={30} />
-              </a>
-              <span
-                className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 
-    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white"
-              >
-                Resume
-              </span>
-            </li>
+            <SocialIcon
+              icon={<FaGithub size={30} />}
+              link="#"
+              hoverText="@lattapanr"
+            />
+            <SocialIcon
+              icon={<FaLinkedin size={30} />}
+              link="https://linkedin.com/in/lattapan"
+              hoverText="linkedin.com/in/lattapan"
+            />
+            <SocialIcon
+              icon={<IoMdMail size={30} />}
+              link="#contact"
+              hoverText="lattapanr@gmail.com"
+            />
+            <SocialIcon
+              icon={<BsFillFileEarmarkPersonFill size={30} />}
+              link="#"
+              hoverText="Resume"
+            />
           </ul>
         </div>
+
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-500 text-center dark:text-gray-400">
           © 2023{" "}

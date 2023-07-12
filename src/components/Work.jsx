@@ -47,19 +47,19 @@ const Work = () => {
 
         <div id="work" className="grid lg:grid-cols-2 gap-8">
           <ProjectItem
-            image={Portfolio}
-            title="Portfolio Website"
-            desc="This responsive portfolio website is built using React and Tailwind CSS. It showcases my work and provides a live contact form for easy communication. Also, it offers light and dark mode for visitor's visual themes preference"
-            demoLink=""
-            codeLink="https://github.com/lattapanr/portfolio"
-          />
-
-          <ProjectItem
             image={BeautyHive}
             title="Beauty Hive"
             desc="Beauty Hive: A modern React website showcasing MakeupAPI's products. Search by brand, explore face, eye, and lip categories. Developed with React, React Router, and optimized API calls."
             demoLink="https://beauty-hive.vercel.app/"
             codeLink="https://github.com/lattapanr/beauty-hive"
+          />
+
+          <ProjectItem
+            image={TalkBack}
+            title="TalkBack"
+            desc="TalkBack is a React-based AI chat assistant that translates user input messages into various communication styles using OpenAI's text generation models."
+            demoLink="https://talk-back-ten.vercel.app/"
+            codeLink="https://github.com/lattapanr/talk-back"
           />
 
           <ProjectItem
@@ -71,11 +71,11 @@ const Work = () => {
           />
 
           <ProjectItem
-            image={TalkBack}
-            title="TalkBack"
-            desc="TalkBack is a React-based AI chat assistant that translates user input messages into various communication styles using OpenAI's text generation models."
-            demoLink="https://talk-back-ten.vercel.app/"
-            codeLink="https://github.com/lattapanr/talk-back"
+            image={Portfolio}
+            title="Portfolio Website"
+            desc="This responsive portfolio website is built using React and Tailwind CSS. It showcases my work and provides a live contact form for easy communication. Also, it offers light and dark mode for visitor's visual themes preference"
+            demoLink=""
+            codeLink="https://github.com/lattapanr/portfolio"
           />
         </div>
       </div>

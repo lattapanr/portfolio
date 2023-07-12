@@ -6,7 +6,7 @@ const Contact = () => {
       id="contact"
       className="w-[75%] h-screen max-w-[1000px] mx-auto flex justify-center items-center md:justify-between gap-20"
     >
-      <div className="max-w-[500px]">
+      <div className="max-w-max">
         <div className="mb-8">
           <p className="text-xl">Lattapan</p>
           <h3 className="uppercase w-full text-4xl lg:text-5xl leading-[3rem]">
