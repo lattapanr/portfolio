@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import ResumeFile from "../assets/Resume-Lattapan.pdf";
 
 import { AiFillHome, AiFillProject, AiFillMail } from "react-icons/ai";
 import {
@@ -155,7 +156,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
               <a
                 className="flex justify-between items-center w-full px-[13px]"
-                href="/"
+                href={ResumeFile}
                 target="_blank"
               >
                 <span className="text-white text-sm">Resume</span>

@@ -1,6 +1,7 @@
 import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ResumeFile from "../assets/Resume-Lattapan.pdf";
 
 const SocialIcon = ({ icon, link, hoverText }) => (
   <li className="group flex relative">
@@ -42,7 +43,7 @@ const Footer = () => {
             />
             <SocialIcon
               icon={<BsFillFileEarmarkPersonFill size={30} />}
-              link="#"
+              link={ResumeFile}
               hoverText="Resume"
             />
           </ul>
