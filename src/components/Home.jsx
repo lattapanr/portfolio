@@ -1,5 +1,5 @@
 import React from "react";
-import MyPhoto from "../assets/profile.webp";
+import MyPhoto from "../assets/profile.jpg";
 
 const Home = () => {
   return (

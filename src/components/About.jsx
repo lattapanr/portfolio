@@ -1,4 +1,4 @@
-import AboutImage from "../assets/aboutImage.webp";
+import AboutImage from "../assets/aboutImage.jpg";
 import { DiHtml5, DiCss3, DiJavascript, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
