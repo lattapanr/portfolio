@@ -1,6 +1,6 @@
-import BeautyHive from "../assets/projects/beautyHive.png";
-import Portfolio from "../assets/projects/portfolio.png";
-import FitnessPal from "../assets/projects/fitnessPal.png";
+import BeautyHive from "../assets/projects/beautyHive.webp";
+import Portfolio from "../assets/projects/portfolio.webp";
+import FitnessPal from "../assets/projects/fitnessPal.webp";
 import TalkBack from "../assets/projects/talkBack.png";
 import "../index.css";
 
