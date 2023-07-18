@@ -17,8 +17,6 @@ const SocialIcon = ({ icon, link, title }) => (
     <a
       className="flex justify-between items-center w-full px-[13px]"
       href={link}
-      target={target || "_blank"}
-      rel={target === "_blank" ? "noopener noreferrer" : undefined}
     >
       <span className="text-white text-sm">{title}</span>
       {icon}

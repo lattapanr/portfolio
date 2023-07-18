@@ -5,13 +5,7 @@ import ResumeFile from "../assets/Resume-Lattapan.pdf";
 
 const SocialIcon = ({ icon, link, hoverText }) => (
   <li className="group flex relative">
-    <a
-      href={link}
-      target={target || "_blank"}
-      rel={target === "_blank" ? "noopener noreferrer" : undefined}
-    >
-      {icon}
-    </a>
+    <a href={link}>{icon}</a>
     <span className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white">
       {hoverText}
     </span>
