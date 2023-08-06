@@ -14,3 +14,4 @@ The portfolio website is built with the following technologies:
 
 - React JS
 - Tailwind CSS
+- Getform
