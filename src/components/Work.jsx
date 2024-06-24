@@ -67,7 +67,7 @@ const Work = () => {
             title="Fitness Pal"
             desc="Fitness Pal is a web app using React, HTML/CSS, Axios, React Router, Material-UI. It integrates with YouTube Data API and RapidAPI for exercise data and video retrieval."
             demoLink="https://fitness-pal.vercel.app/"
-            codeLink="https://github.com/lattapanr/fitness-pal"
+            codeLink="https://fitness-ncl1uuq5u-lattapanrs-projects.vercel.app/"
           />
 
           <ProjectItem
