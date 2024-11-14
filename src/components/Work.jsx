@@ -7,7 +7,7 @@ import "../index.css";
 const ProjectItem = ({ image, title, desc, demoLink, codeLink }) => (
   <div
     style={{ backgroundImage: `url(${image})` }}
-    className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto bg-cover bg-no-repeat bg-center h-[200px] sm:h-[250px] w-full max-w-[340px] sm:max-w-[400px] content_div"
+    className="shadow-sm shadow-primary group container flex justify-center items-center mx-auto bg-cover bg-no-repeat bg-center h-[200px] sm:h-[220px] w-full max-w-[340px] sm:max-w-[370px] content_div"
   >
     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black bg-opacity-50 p-4 rounded-md">
       <h3 className="text-lg sm:text-xl text-center font-bold text-white tracking-wide">
@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <div
       id="work"
-      className="w-full text-primary mb-[5rem] mt-[5rem] lg:mt-0 lg:mb-0"
+      className="w-full text-primary mb-[5rem] mt-[5rem]"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 flex flex-col justify-center">
         <div className="pb-8">
