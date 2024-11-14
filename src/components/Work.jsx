@@ -77,7 +77,7 @@ const Work = () => {
             image={Portfolio}
             title="Portfolio Website"
             desc="A responsive portfolio website built with React and Tailwind CSS. Features a live contact form and theme toggle."
-            demoLink="https://github.com/lattapanr/portfolio"
+            codeLink="https://github.com/lattapanr/portfolio"
           />
         </div>
       </div>
