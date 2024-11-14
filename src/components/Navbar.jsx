@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import ResumeFile from "../assets/Resume-Lattapan.pdf";
+import ResumeFile from "../assets/Resume_Lattapan.pdf";
 
 import { AiFillHome, AiFillProject, AiFillMail } from "react-icons/ai";
 import {

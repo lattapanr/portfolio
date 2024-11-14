@@ -1,7 +1,7 @@
 import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import ResumeFile from "../assets/Resume-Lattapan.pdf";
+import ResumeFile from "../assets/Resume_Lattapan.pdf";
 
 const SocialIcon = ({ icon, link, hoverText }) => (
   <li className="group flex relative">
@@ -52,7 +52,7 @@ const Footer = () => {
 
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-500 text-center dark:text-gray-400">
-          © 2023{" "}
+          © 2024{" "}
           <a
             href="https://github.com/lattapanr"
             target="_blank"
