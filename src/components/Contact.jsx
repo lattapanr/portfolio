@@ -1,6 +1,37 @@
+import React, { useState } from "react";
 import CodingIllustration from "../assets/coding.png";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    // Perform form submission logic
+    const form = e.target;
+    fetch(form.action, {
+      method: form.method,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData),
+    }).then(() => {
+      // Clear form fields after submission
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      alert("Your message has been sent!");
+    }).catch((error) => {
+      console.error("Error submitting the form:", error);
+      alert("Failed to send the message. Please try again.");
+    });
+  };
+
   return (
     <div
       id="contact"
@@ -17,6 +48,7 @@ const Contact = () => {
         <form
           action="https://getform.io/f/4775d1dc-3696-4209-9d11-5f51e3768ecc"
           method="POST"
+          onSubmit={handleSubmit}
         >
           <div className="relative z-0 w-full mb-6 group">
             <input
@@ -26,6 +58,8 @@ const Contact = () => {
               className="block py-2 px-0 w-full text-base text-primary bg-transparent border-0 border-b-2 border-primary appearance-none dark:text-white dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:primary peer"
               placeholder=" "
               required
+              value={formData.name}
+              onChange={handleChange}
             />
             <label
               htmlFor="contactName"
@@ -34,6 +68,7 @@ const Contact = () => {
               Name
             </label>
           </div>
+
           <div className="relative z-0 w-full mb-6 group">
             <input
               type="email"
@@ -42,6 +77,8 @@ const Contact = () => {
               className="block py-2 px-0 w-full text-base text-primary bg-transparent border-0 border-b-2 border-primary appearance-none dark:text-white dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:primary peer"
               placeholder=" "
               required
+              value={formData.email}
+              onChange={handleChange}
             />
             <label
               htmlFor="email"
@@ -59,6 +96,8 @@ const Contact = () => {
               className="block py-2 px-0 w-full text-base text-primary bg-transparent border-0 border-b-2 border-primary appearance-none dark:text-white dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:primary peer"
               placeholder=" "
               required
+              value={formData.subject}
+              onChange={handleChange}
             />
             <label
               htmlFor="subject"
@@ -70,12 +109,13 @@ const Contact = () => {
 
           <div className="relative z-0 w-full mb-6 group">
             <textarea
-              type="text"
               name="message"
               id="message"
               className="block py-3 px-0 w-full text-base text-primary whitespace-pre-line bg-transparent border-0 border-b-2 border-primary appearance-none dark:text-white dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:primary peer"
               placeholder=" "
               required
+              value={formData.message}
+              onChange={handleChange}
             />
             <label
               htmlFor="message"
@@ -96,7 +136,7 @@ const Contact = () => {
       <img
         src={CodingIllustration}
         alt="coding illustration"
-        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[350px] "
+        className="hidden md:flex h-[300px] w-[210px] lg:h-[400px] lg:w-[350px]"
       />
     </div>
   );
