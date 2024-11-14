@@ -3,9 +3,11 @@ import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ResumeFile from "../assets/Resume_Lattapan.pdf";
 
-const SocialIcon = ({ icon, link, hoverText }) => (
+const SocialIcon = ({ icon, link, hoverText, target = "_self", rel = "noopener noreferrer" }) => (
   <li className="group flex relative">
-    <a href={link}>{icon}</a>
+    <a href={link} target={target} rel={rel}>
+      {icon}
+    </a>
     <span className="group-hover:opacity-100 transition-opacity px-1 text-sm text-primary absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto dark:text-white">
       {hoverText}
     </span>
@@ -23,7 +25,7 @@ const Footer = () => {
             </span>
           </div>
 
-          <ul className="flex flex-wrap items-center justify-between w-[180px] sm:w-[250px]  cursor-pointer">
+          <ul className="flex flex-wrap items-center justify-between w-[180px] sm:w-[250px] cursor-pointer">
             <SocialIcon
               icon={<FaGithub size={30} />}
               link="https://github.com/lattapanr"
@@ -56,6 +58,7 @@ const Footer = () => {
           <a
             href="https://github.com/lattapanr"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:underline"
           >
             Lattapan™

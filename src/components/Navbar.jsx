@@ -12,11 +12,13 @@ import {
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaTimes, FaBars } from "react-icons/fa";
 
-const SocialIcon = ({ icon, link, title }) => (
+const SocialIcon = ({ icon, link, title, target = "_self", rel = "noopener noreferrer" }) => (
   <li className="w-[120px] h-[50px] flex justify-between items-center ml-[-70px] hover:ml-[-5px] duration-300 bg-primary">
     <a
       className="flex justify-between items-center w-full px-[13px]"
       href={link}
+      target={target}
+      rel={rel}
     >
       <span className="text-white text-sm">{title}</span>
       {icon}
